@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home_Fragment">
+
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="ma.quotidien.android.agendaapp.fragments.Home_Fragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" >
+        <action
+            android:id="@+id/action_home_Fragment_to_ajouter_Fragment"
+            app:destination="@id/ajouter_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_program_Fragment"
+            app:destination="@id/program_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ajouter_Fragment"
+        android:name="ma.quotidien.android.agendaapp.fragments.Ajouter_Fragment"
+        android:label="fragment_ajouter_"
+        tools:layout="@layout/fragment_ajouter_" >
+        <action
+            android:id="@+id/action_ajouter_Fragment_to_home_Fragment"
+            app:destination="@id/home_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/program_Fragment"
+        android:name="ma.quotidien.android.agendaapp.fragments.Program_Fragment"
+        android:label="fragment_program_"
+        tools:layout="@layout/fragment_program_" />
+</navigation>

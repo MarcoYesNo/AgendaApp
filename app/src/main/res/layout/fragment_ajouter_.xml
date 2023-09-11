@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Ajouter_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description de la tache"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="-14dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <EditText
+            android:id="@+id/txtTache"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="tache..."
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="12dp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date..."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="-14dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <Button
+            android:id="@+id/btnDate"
+            android:text="Date"
+            android:background="@color/teal_200"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heures..."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="-14dp"
+            tools:layout_editor_absoluteY="143dp" />
+        <Button
+            android:id="@+id/btnTime"
+            android:text="Heure"
+            android:background="@color/teal_200"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+        <Button
+            android:id="@+id/btnAjoutTache"
+            android:text="Ajouter"
+            android:background="@color/teal_700"
+            android:layout_marginTop="15dp"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
